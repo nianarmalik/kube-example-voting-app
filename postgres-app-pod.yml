@@ -1,0 +1,14 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: podtgres-pod
+  labels:
+    name: podtgres-pod
+    app: demo-voting-app
+
+spec:
+  containers:
+    - name: podtgres
+     image: podtgres:9.4
+     ports:
+       - containerPort: 5432
