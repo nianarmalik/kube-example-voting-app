@@ -8,7 +8,7 @@ metadata:
 
 spec:
   containers:
-    - name: podtgres
-     image: podtgres:9.4
-     ports:
-       - containerPort: 5432
+  - name: podtgres
+    image: podtgres:9.4
+    ports:
+    - containerPort: 5432
